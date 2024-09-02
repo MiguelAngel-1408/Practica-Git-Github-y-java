@@ -28,6 +28,12 @@ class CalculadoraTest {
 		assertEquals(4, resultado);
 	}
 	
+	@Test
+	void testRestar () {
+		int resultado = calculadora.restar(3, 2);
+		assertEquals(1, resultado);
+	}
+	
 	
 	
 
