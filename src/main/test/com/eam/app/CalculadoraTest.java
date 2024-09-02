@@ -2,6 +2,7 @@ package main.test.com.eam.app;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,6 +16,12 @@ class CalculadoraTest {
 	void antes () {
 		calculadora = new Calculadora();
 	}
+	
+	@AfterEach
+	void despues() {
+		System.out.println("Prueba finalizada");
+	}	
+	
 	
 	
 
