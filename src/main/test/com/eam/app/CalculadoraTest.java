@@ -20,7 +20,13 @@ class CalculadoraTest {
 	@AfterEach
 	void despues() {
 		System.out.println("Prueba finalizada");
-	}	
+	}
+	
+	@Test
+	void testSumar() {
+		int resultado = calculadora.sumar(2, 2);
+		assertEquals(4, resultado);
+	}
 	
 	
 	
